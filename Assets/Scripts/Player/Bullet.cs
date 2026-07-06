@@ -21,4 +21,14 @@ public class Bullet : MonoBehaviour
     {
         transform.Translate(Vector2.right * direction * speed * Time.deltaTime);
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Enemy"))
+        {
+            collision.GetComponent<EnemyHealth>().TakeDamage(1);
+
+            Destroy(gameObject);
+        }
+    }
 }
