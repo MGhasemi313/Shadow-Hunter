@@ -56,10 +56,21 @@ public class PlayerMovement : MonoBehaviour
         rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
 
         if (moveInput > 0)
-            spriteRenderer.flipX = false;
+        {
+            spriteRenderer.flipX = false; 
+            Vector3 fp = groundCheck.parent.Find("FirePoint").localPosition;
+        fp.x = Mathf.Abs(fp.x);
+        groundCheck.parent.Find("FirePoint").localPosition = fp;
+        }
 
         if (moveInput < 0)
+        {
+
             spriteRenderer.flipX = true;
+            Vector3 fp = groundCheck.parent.Find("FirePoint").localPosition;
+            fp.x = -Mathf.Abs(fp.x);
+            groundCheck.parent.Find("FirePoint").localPosition = fp;
+        }
     }
 
     void HandleJump()
