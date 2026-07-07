@@ -41,7 +41,7 @@ public class PlayerHealth : MonoBehaviour
 
         animator.SetTrigger("Die");
 
-        Invoke(nameof(GameOver), 1.5f);
+        Invoke(nameof(GameOver), 1f);
     }
 
     void GameOver()
