@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5459973353329487082}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3, y: 0, z: 0}
+  m_LocalPosition: {x: 2, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -55,7 +55,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5459973353762963373}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3, y: 0, z: 0}
+  m_LocalPosition: {x: -2, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -78,6 +78,7 @@ GameObject:
   - component: {fileID: 5459973354068556872}
   - component: {fileID: 5459973354068556879}
   - component: {fileID: 5459973354068556878}
+  - component: {fileID: 161109702840662135}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -100,7 +101,7 @@ Transform:
   - {fileID: 5459973353762963374}
   - {fileID: 5459973353329487083}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!212 &5459973354068556882
 SpriteRenderer:
@@ -252,3 +253,15 @@ MonoBehaviour:
   pointA: {fileID: 5459973353329487083}
   pointB: {fileID: 5459973353762963374}
   speed: 2
+--- !u!114 &161109702840662135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5459973354068556880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ca488d236517904399224e1423c079b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
